@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<script language="javascript">
+		function oblicz()
+		{
+			var numer1=parseInt(prompt("Podaj pierwszą liczbę"));
+			var numer2=parseInt(prompt("Podaj drugą liczbę"));
+			var wynik = 0;
+			
+			if (numer1<numer2)
+			{
+				for (i=numer1+1; i<=numer2-1; i++)
+				{
+					wynik+=i;
+				}
+			alert(wynik);
+			}
+			else if (numer1>numer2)
+			{
+				alert("Bruh?");
+			}
+		}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="naciśnij tu" OnClick="oblicz()"}>
+	</body>
+</html>
